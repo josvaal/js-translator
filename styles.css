@@ -1,0 +1,108 @@
+body{
+  height: 100vh;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.__box{
+  height: 70vh;
+  width: 120vh;
+  border-radius: 15px;
+}
+.__wraper{
+  display: flex;
+  padding: 5px;
+}
+.__box button{
+  margin: 15px 0;
+}
+.__input{
+  display: flex;
+  height: 38vh;
+}
+.__input textarea{
+  resize: none;
+  margin: 0 5px;
+}
+.__options{
+  display: flex;
+}
+.__options .icon{
+  padding: 10px;
+  cursor: pointer;
+}
+.__op-pre,
+.__op-post{
+  padding-top: 20px;
+  padding-bottom: 8px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 5px;
+}
+.__exchange{
+  padding-top: 20px;
+  padding-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+.__select{
+  padding: 0;
+  width: auto;
+  margin: auto 0;
+}
+
+input, select, textarea {
+  transition: none;
+}
+
+#config{
+  position: absolute;
+  background-color: #ffc252;
+  transition: 0.3s;
+  border-radius: 50%;
+  margin: 12px;
+  padding: 20px;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+}
+#config:hover{
+  background-color: #dba747;
+  transition: 0.3s;
+}
+#config i {
+  transform: scale(1.5);
+  color: #303030;
+}
+
+#dialog article{
+  width: 600px;
+}
+
+#dialog article h2{
+  text-align: center;
+  margin: 0 0px 50px 0px;
+}
+
+.config-option{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.config-option h4{
+  margin: 0;
+}
+#created_by{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 8px;
+  color: rgba(255, 255, 255, 0.15);
+}
