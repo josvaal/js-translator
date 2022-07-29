@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Translator✨</title>
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+  <link rel="stylesheet" href="./styles.css">
+  <!-- css.gg -->
+  <link href='https://css.gg/css' rel='stylesheet'>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166000335-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-166000335-1');
+  </script>
+</head>
+
+<body>
+  <main class="container">
+    <article class="__box" style="padding: 30px;">
+      <div class="__wrapper">
+        <div class="__input">
+          <textarea id="pre" placeholder="Escribe lo que desea traducir"></textarea>
+          <textarea id="post"></textarea>
+        </div>
+        <div class="__options">
+          <div class="__op-pre">
+            <div class="icon" id="speech-pre"><i class="gg-volume"></i></div>
+            <div class="icon" id="copy-pre"><i class="gg-copy"></i></div>
+            <select id="pre-select" class="__select"></select>
+          </div>
+          <div class="__exchange" id="exchange">
+            <div class="icon"><i class="gg-arrows-exchange"></i></div>
+          </div>
+          <div class="__op-post">
+            <div class="icon" id="speech-post"><i class="gg-volume"></i></div>
+            <div class="icon" id="copy-post"><i class="gg-copy"></i></div>
+            <select id="post-select" class="__select"></select>
+          </div>
+        </div>
+      </div>
+      <div class="__wraper">
+        <button id="translate">Traducir texto</button>
+      </div>
+    </article>
+    <dialog id="dialog">
+      <article>
+        <h2>Configuración</h2>
+        <div class="config-option">
+          <h4>Modo oscuro: </h4>
+          <input type="checkbox" id="darkmode">
+        </div>
+        <div class="config-option">
+          <h4>Traducir al escribir: </h4>
+          <input type="checkbox" id="autowrite">
+        </div>
+        <footer style="display: flex; justify-content: space-around;">
+          <a id="cancel-option" href="#cancel" role="button" class="secondary">Cancelar</a>
+          <a id="confirm-option" href="#confirm" role="button" style="display: flex; align-items: center;">Guardar&nbsp;<i class="gg-smile-mouth-open"></i></a>
+        </footer>
+      </article>
+    </dialog>
+    <div id="config"><i class="gg-menu-grid-o"></i></div>
+    <div id="created_by">
+      Created by JosVal
+    </div>
+  </main>
+  <script src="./countries.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
